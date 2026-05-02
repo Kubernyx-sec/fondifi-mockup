@@ -4,13 +4,16 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>FONDiFi — Mockup Versions</title>
+<meta name="description" content="FONDiFi concept mockups — three design directions." />
 <style>
   body { font-family: -apple-system, "Segoe UI", system-ui, sans-serif; margin: 0; padding: 60px 24px; background: #faf8f6; color: #030313; min-height: 100vh; box-sizing: border-box; }
-  main { max-width: 720px; margin: 0 auto; }
+  main { max-width: 1040px; margin: 0 auto; }
   h1 { font-size: 2rem; margin: 0 0 8px; }
   p { color: #5b5f72; line-height: 1.6; }
-  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 32px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 32px; }
+  @media (max-width: 900px) { .cards { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+  .badge { display: inline-block; padding: 2px 8px; margin-left: 6px; background: #fcdc5e; color: #030313; border-radius: 999px; font-size: 0.7rem; font-weight: 600; vertical-align: middle; }
   a.card { display: block; padding: 24px; background: #fff; border: 1px solid #e7e5df; border-radius: 14px; text-decoration: none; color: inherit; transition: transform .15s, box-shadow .2s, border-color .15s; }
   a.card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(2,47,254,0.12); border-color: #022ffe; }
   a.card h2 { margin: 0 0 6px; font-size: 1.15rem; color: #022ffe; }
@@ -30,6 +33,10 @@
     <a class="card" href="./v2/">
       <h2>Version 2 → Brand-Faithful</h2>
       <span>Real FONDiFi assets: electric blue + warm yellow, Quicksand + DM Sans, actual founder photos and logo.</span>
+    </a>
+    <a class="card" href="./v3/">
+      <h2>Version 3 → Beat MyOutDesk<span class="badge">NEW</span></h2>
+      <span>Verticalized property-management positioning, head-to-head comparison vs MyOutDesk / Anequim / Virtudesk, live ROI calculator, audit-pass guarantee.</span>
     </a>
   </div>
   <small>Concept work by Kubernyx · May 2026</small>
